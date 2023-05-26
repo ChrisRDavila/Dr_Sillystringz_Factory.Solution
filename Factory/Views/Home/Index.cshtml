@@ -7,19 +7,34 @@
 <h1>Welcome to Dr. Sillystringz's Factory App!</h1>
 
 <hr>
-
-<h4>Engineers</h4>
-@if (Model["engineers"].Length == 0)
-{
-  <p>No engineers have been added yet!</p>
-} 
-<ul>
-  @foreach (Engineer engineer in Model["engineers"])
-  {
-    <li>@Html.ActionLink(@engineer.Name, "Details", "Engineers", new { id = @engineer.EngineerId})</li>
-  }
-</ul>
-
+<div class="row align-items-start">
+  <div class="col">
+    <h4>Engineers</h4>
+    @if (Model["engineers"].Length == 0)
+    {
+      <p>No engineers have been added yet!</p>
+    } 
+    <ul>
+      @foreach (Engineer engineer in Model["engineers"])
+      {
+        <li>@Html.ActionLink(@engineer.Name, "Details", "Engineers", new { id = @engineer.EngineerId})</li>
+      }
+    </ul>
+  </div>  
+  <div class="col">
+    <h4>Machines</h4>
+    @if (Model["machines"].Length == 0)
+    {
+      <p>No machines have been added yet!</p>
+    }
+    <ul>
+      @foreach (Machine machine in Model["machines"])
+      {
+        <li>@Html.ActionLink(@machine.Model, "Details", "machines", new { id = @machine.MachineId})</li>
+      }
+    </ul>
+  </div>
+</div>  
 <hr>
 
 <p>@Html.ActionLink("Manage engineers", "Index", "Engineers")</p> 
