@@ -3,7 +3,26 @@ div#footer {
 	bottom:0px;
 	left:0px;
 	width:100%;
-	color:#CCC;
-	background:#333;
+	color: coral;
+	background-color: aliceblue;
 	padding:8px;
+}
+
+body {
+  background-image: url('./factbg3.jpg');
+  color: azure;
+  background-size: cover;
+  background-position:center;
+  background-repeat:round;
+  background-attachment: fixed;
+  font-family: 'Times New Roman', Times, serif;
+	font-size: 125%;
+  border: 20px;
+  padding: 25px;
+  margin: 50px;
+	margin-bottom: 150px;
+  opacity: 85%;
+	text-align: justify;
+	display: block;
+	box-sizing: border-box;
 }
