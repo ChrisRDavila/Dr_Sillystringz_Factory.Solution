@@ -5,6 +5,7 @@
 @model Factory.Models.Engineer
 
 <h4>Add a new engineer</h4>
+<hr><br>
 
 <p>@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
 <p>@Html.ValidationMessageFor(model => model.License, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
