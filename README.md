@@ -1,6 +1,6 @@
 # Dr Sillystringz's Factory
 
-#### This app will allow the client to add engineers and machines to their factory and assign Engineers to a machine or a machine to an engineer
+#### This app will allow the client to add engineers and machines to their factory. They can also keep track of repairs assigning Engineers to a machine or a machine to an engineer
 
 #### By Christopher Ross Davila
 
