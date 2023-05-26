@@ -57,14 +57,6 @@ namespace Factory.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpPost]
-    public ActionResult Edit(Tag tag)
-    {
-      _db.Tags.Update(tag);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
-
     public ActionResult Delete(int id)
     {
       Machine thisMachine = _db.Machines.FirstOrDefault(machines => machines.MachineId == id);
