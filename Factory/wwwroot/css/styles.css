@@ -25,6 +25,7 @@ body {
 	text-align: justify;
 	display: block;
 	box-sizing: border-box;
+	float:left;
 }
 .fade-in-down
 {
@@ -46,7 +47,7 @@ body {
 input
 {
 	background-color:blanchedalmond;
-	color:cadetblue;
+	color:lightsalmon;
 	border-radius: 10px;
 }
 
@@ -65,4 +66,9 @@ select
 {
 	background-color:blanchedalmond;
 	color: coral;
+}
+input.btn
+{
+	background-color:burlywood;
+	color: cornflowerblue;
 }
