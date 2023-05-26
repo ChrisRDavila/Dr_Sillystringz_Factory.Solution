@@ -14,7 +14,7 @@
   <ul>
     @foreach (Engineer engineer in Model["engineers"])
     {
-      <li>@Html.ActionLink(@engineer.Name, "Details", "Engineers", new { id = @engineers.EngineerId})</li>
+      <li>@Html.ActionLink(@engineer.Name, "Details", "Engineers", new { id = @engineer.EngineerId})</li>
     }
   </ul>
 
