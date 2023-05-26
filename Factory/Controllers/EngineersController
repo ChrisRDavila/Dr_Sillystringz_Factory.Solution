@@ -17,10 +17,9 @@ namespace Factory.Controllers
     public ActionResult Index()
     {
       List<Engineer> model = _db.Engineers
-                              .OrderBy(engineer => engineer.Name)
-                              .ToList();
-      ViewBag.PageTitle = "View All Engineers";  
-      return View(model);                        
+                            .OrderBy(item => item.Name)
+                            .ToList();
+      return View(model);
     }
 
     public ActionResult Create()
