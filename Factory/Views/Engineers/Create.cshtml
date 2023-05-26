@@ -7,11 +7,14 @@
 <h4>Add a new engineer</h4>
 
 <p>@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
+<p>@Html.ValidationMessageFor(model => model.License, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
 
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)<br>
   @Html.TextBoxFor(model => model.Name)<br>
+  @Html.LabelFor(model => model.License)<br>
+  @Html.TextBoxFor(model => model.License)<br>
 
   <input type="submit" value="Add new engineer" class="btn btn-default" />
 }

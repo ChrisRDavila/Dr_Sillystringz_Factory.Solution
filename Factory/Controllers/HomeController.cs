@@ -18,8 +18,8 @@ namespace Factory.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-      Engineer[] engineers = _db.Engineers.ToArray();
-      Machine[] machines = _db.Machines.ToArray();
+      Engineer[] engineers = _db.Engineers.OrderBy(engineers => engineers.Name).ToArray();
+      Machine[] machines = _db.Machines.OrderBy(machines => machines.Model).ToArray();
       Dictionary<string,object[]> model = new Dictionary<string, object[]>();
       model.Add("engineers", engineers);
       model.Add("machines", machines);
@@ -28,4 +28,3 @@ namespace Factory.Controllers
 
   }
 }
-//.OrderBy(engineers => engineers.Name)
