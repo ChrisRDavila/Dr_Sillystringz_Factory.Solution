@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factroy.Models.Machine
+
+@* <p>@Html.ValidationMessageFor(model => model.Model, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p> *@
+
+<h4>Add a new machine</h4>
+<hr><br>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Model)
+    @Html.TextBoxFor(model => model.Model)
+
+    <input type="submit" value="Add new machine" class="btn btn-primary" />
+}
+<p>@Html.ActionLink("Show all machines", "Index")</p>
