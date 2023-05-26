@@ -42,3 +42,27 @@ body {
 		transform: translate(0);
 	}
 }
+
+input
+{
+	background-color:blanchedalmond;
+	color:cadetblue;
+	border-radius: 10px;
+}
+
+a
+{
+	color:cornsilk;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: 100;
+}
+a:hover
+{
+	color: darkred;
+}
+
+select
+{
+	background-color:blanchedalmond;
+	color: coral;
+}
