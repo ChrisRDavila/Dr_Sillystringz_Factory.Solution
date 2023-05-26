@@ -10,10 +10,14 @@
 
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.Model)
-    @Html.TextBoxFor(model => model.Model)
+  @Html.HiddenFor(model => model.MachineId)
 
-    <input type="submit" value="Save" class="btn btn-primary" />
+  @Html.LabelFor(model => model.Model)
+  @Html.TextBoxFor(model => model.Model)
+  @Html.LabelFor(model => model.Inspection)
+  @Html.EditorFor(model => model.Inspection)
+
+  <input type="submit" value="Save" class="btn btn-primary" />
 }
 
 <p>@Html.ActionLink("Back to machines list", "Index")</p>

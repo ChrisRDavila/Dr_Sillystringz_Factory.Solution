@@ -5,6 +5,7 @@
 @model Factory.Models.Machine
 
 <p>@Html.ValidationMessageFor(model => model.Model, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
+<p>@Html.ValidationMessageFor(model => model.Inspection, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
 
 <h4>Add a new machine</h4>
 <hr><br>
@@ -12,8 +13,9 @@
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Model)<br>
-
     @Html.TextBoxFor(model => model.Model)<br>
+    @Html.LabelFor(model => model.Inspection)<br>
+    @Html.EditorFor(model => model.Inspection)<br>
 
     <input type="submit" value="Add new machine" class="btn btn-primary" />
 }
