@@ -1,16 +1,18 @@
-# (Application Name) remove parens
+# Dr Sillystringz's Factory
 
-#### (Brief Description of Application) remove parens
+#### This app will allow the client to add engineers and machines to their factory and assign Engineers to a machine or a machine to an engineer
 
-#### By (Your Name Here) remove parans
+#### By Christopher Ross Davila
 
 ## Technologies Used
 
-* _dot net 6_
-* _cshtml_
+* _Microsoft.EntityFrameworkCore.Design -v 6.0.0_
+* _Razor Syntax_
 * _C#_
-* _ASP Core MVC_
-_MS Build_
+* _ASP.Net Core_
+* _VS Code_
+* _GitHub_
+* _dotnet -ef_
 
 
 ## Description
