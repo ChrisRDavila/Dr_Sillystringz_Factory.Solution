@@ -48,6 +48,7 @@
 ## Known Bugs
 
 * _May have made more sense to create license class with one(engineer) to many(licenses) instead of assign it as a property.  As it stands now, multiple licenses would just be added in same input with comma.  Doing it as a class may have allowed later to only allow man/machine relationship if license present, will come back and refigure with time_
+* _aslo inspection could be clarified more and possibly might benifit from many(inspections) to one(machine) relationshio and having its own class instead of just a property
 
 * _none yet_
 ## License
