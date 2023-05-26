@@ -14,10 +14,11 @@ namespace Factory.Controllers
     {
       _db = db;
     }
+    
     public ActionResult Index()
     {
       List<Engineer> model = _db.Engineers
-                            .OrderBy(item => item.Name)
+                            .OrderBy(engineer => engineer.Name)
                             .ToList();
       return View(model);
     }
