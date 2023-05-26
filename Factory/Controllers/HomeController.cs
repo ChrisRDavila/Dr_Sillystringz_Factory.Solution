@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 
 
-namespace ProjectName.Controllers
+namespace Factory.Controllers
 {
   public class HomeController : Controller
   {
