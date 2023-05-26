@@ -11,37 +11,42 @@
 * _C#_
 * _ASP.Net Core_
 * _VS Code_
-* _GitHub_
+* _Git Hub_
 * _dotnet -ef_
+* _MySQL_
 
 
 ## Description
+## Client Wed application that allows client to input Engineers and Machines, update, edit and delete from a data table and view List of displayed Employees and Machines. Using many to many realtionships clients can the join an engineer(s) to a machine(s) they can work on or vice versa to keep track of factory machine to employee relationships
 
 ## Setup/Installation Requirements
 
-<!-- Going forward, don't forget to include setup instructions in your README for an appsettings.json with a database connection string. -->
 
-* _1. Clone this repo._
-* _X. _dotnet add package MySqlConnector -v 2.2.0_
-* _8. _create the file appsettings.json, and what code to include in it. We recommend using the above formatting and directing users to replace [YOUR-USERNAME-HERE] and [YOUR-PASSWORD-HERE] with the user's own user and password values. also add [YOUR-DB-NAME] with database used_
-* _this format -> 
-<!-- {
-  "ConnectionStrings": {
+* _1. Clone this repo using `\$ git clone https://github.com/ChrisRDavila/Dr_Sillystringz_Factory.Solution.git`._
+* _2. Open your terminal (e.g., Terminal or GitBash) and navigate to the production directory called "Dr_Sillystringz_Factory.solution" and use command `\$ code .` to open project in vs code_
+* _3. _Create appsettings.json file to store database name, user name and password for connecting to MySQL database using this structure:_
+```cs
+ "ConnectionStrings": 
+{
     "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
-  }
-} -->
-* _2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ProjectFile"._
-* _3. In the command line, run the command `\$ dotnet run` to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal._
-* _4. Optionally, you can run `\$ dotnet build` to compile this console app without running it._
-* _5. Use `\$ dotnet test run` in the Test directory to run test on the application_
-* _6. use `\$ dotnet watch run` to cycle the server_
-* _7. use `\$ dotnet watch run --launch-profile "production"` to run in production mode_
+}
+```
+* _3. cont'd: where [YOUR-DB-NAME] is going to be the database you import and connect (i.e. data_base), [YOUR-USER-NAME] will be your MySQL log in name and [YOUR-PASSWORD-HERE] will be your MySQL password_
+* _4. Add .gitignore file with appsetting.json inside so private information is not uploaded to repo_
+* _5. For next instructions please make sure you have access to MySQL and MySQLWorkbench, download and open isntance if have not already_
+* _6. Navigate to project file `\$ /Factory`.
+* _7. In the command line, run the command `\$ dotnet tool install --global dotnet-ef --version 6.0.0` if have not added dotnet -ef globally yet._
+* _7. In the command line, run the command `\$ dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0` to add Entity EFCore._
+* _7. In the command line, run the command `\$ dotnet ef database update` to create data base for project to store data input._
+* _8. In the command line, run the command `\$ dotnet restore` to restore project files._
+* _15. Run `\$ dotnet build` to compile this console app without running it._
+* _16. use `\$ dotnet watch run` to cycle the server and navigate to your browser for UI interface_
+* _17. From splash page enter follow the prompted instructions to add an engineer or machine and continue to follow instructions to make desired relationships between man and machine_
+* _18. If needed, Edit or delete entries on corresponding views as well_
 
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
-
+* _none yet_
 ## License
-[MIT](https://yourlicesnepage)
+[MIT](https://github.com/ChrisRDavila/Dr_Sillystringz_Factory.Solution/blob/main/License.txt)
