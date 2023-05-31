@@ -25,7 +25,7 @@
 * _1. Clone this repo using `\$ git clone https://github.com/ChrisRDavila/Dr_Sillystringz_Factory.Solution.git`._
 * _2. Open your terminal (e.g., Terminal or GitBash) and navigate to the production directory called "Dr_Sillystringz_Factory.solution" and use command `\$ code .` to open project in vs code_
 * _3. _Create appsettings.json file to store database name, user name and password for connecting to MySQL database using this structure:_
-```cs
+```json
  "ConnectionStrings": 
 {
     "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
