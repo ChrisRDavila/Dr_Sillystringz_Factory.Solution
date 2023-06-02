@@ -39,10 +39,10 @@
 * _7. In the command line, run the command `\$ dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0` to add Entity EFCore._
 * _7. In the command line, run the command `\$ dotnet ef database update` to create data base for project to store data input._
 * _8. In the command line, run the command `\$ dotnet restore` to restore project files._
-* _15. Run `\$ dotnet build` to compile this console app without running it._
-* _16. use `\$ dotnet watch run` to cycle the server and navigate to your browser for UI interface_
-* _17. From splash page enter follow the prompted instructions to add an engineer or machine and continue to follow instructions to make desired relationships between man and machine_
-* _18. If needed, Edit or delete entries on corresponding views as well_
+* _9. Run `\$ dotnet build` to compile this console app without running it._
+* _10. use `\$ dotnet watch run` to cycle the server and navigate to your browser for UI interface_
+* _11. From splash page enter follow the prompted instructions to add an engineer or machine and continue to follow instructions to make desired relationships between man and machine_
+* _12. If needed, Edit or delete entries on corresponding views as well_
 
 
 ## Known Bugs
